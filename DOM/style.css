@@ -1,0 +1,51 @@
+body {
+    background-color: gold;
+}
+
+.firstOne {
+    margin-top: 34px;
+    margin-left: 34px;
+    margin-right: 34;
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    width: 750px;
+    height: 350px;
+    margin: 0 auto;
+    margin-right: 10px;
+    float: left;
+    border-radius: 270px;
+    font-size: 120px;
+    border: 20px solid lawngreen;
+    background-color: lightgreen;
+    color: orange;
+    text-transform: uppercase;
+}
+
+
+div.secondOne {
+    width: 1500px;
+    height: 150px;
+    border:none;
+    background-color: rgb(253, 241, 63);
+}
+
+input[type="text"] {
+     display: block;
+     margin : 0 auto;
+}
+
+.btn2 {
+    display: block;
+    width: 100px;
+    height: 20px;
+    margin: 0 auto;
+    background-color: lightgreen;
+    border: 3px solid lawngreen;
+    color: orangered;
+    font-size: 15;
+}
