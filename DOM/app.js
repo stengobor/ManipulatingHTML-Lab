@@ -67,6 +67,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // This is task #5
     
     const finalBtn = document.createElement('button');
+    const newLi = document.createElement("li");
+    let listName = document.createElement('h3');
 
     finalBtn.addEventListener("click", function () {
         listFriends();
@@ -76,8 +78,6 @@ document.addEventListener("DOMContentLoaded", function () {
         function listFriends() {
             for (let i = 0; i < friends.length; i++) {
 
-                const newLi = document.createElement("li");
-                let listName = document.createElement('h3');
                 listName.innerHTML = friends[i];
                 listCount++
                 newLi.appendChild(listName);
