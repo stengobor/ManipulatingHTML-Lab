@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-
+    
+    // This is Task #1
     const newDiv = document.createElement("div");
     newDiv.className = "firstOne";
     const newButton = document.createElement("button");
@@ -13,13 +14,13 @@ document.addEventListener("DOMContentLoaded", function () {
     newButton.addEventListener("click", function () {
         alert("It can still be a good day!");
     });
-    // Everything Above is Task #1
+    // This is Task #2
 
     const inputText = document.getElementById("inputText");
     document.getElementById("btnSubmit").addEventListener("click", function () {
         alert(inputText.value);
     });
-    // This is Task #2
+    // This is Task #3
 
     let color = [, "#3C9EE7", "#E7993C",
         "#E73C99", "#3CE746", "#E7993C"];
@@ -31,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     newDiv.addEventListener("mouseout", function () {
         newDiv.style.background = "gold";
     });
-    // This is Task #3
+    // This is Task #4
 
     document.getElementById('words').onclick = changeColor;
 
@@ -41,8 +42,8 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.style.color = randomColor;
         return false;
     }
-    // This is Task #4
-
+    // This is task #5
+    
     const divThree = document.createElement('div');
     divThree.className = "thirdOne";
     const lastBtn = document.createElement('button');
@@ -64,25 +65,54 @@ document.addEventListener("DOMContentLoaded", function () {
 
         document.body.appendChild(newSpan);
     });
-    // This is task #5
-    
+
+    // This is task #6
+
     const finalBtn = document.createElement('button');
     const newLi = document.createElement("li");
-    let listName = document.createElement('h3');
-
+    
+    let friends = ['Rich', 'MoMo', 'Onyx', 'Maddy', 'Jovanna', 'Alex', 'Jarita', 'John', 'Jane', 'Miley'];
+    
     finalBtn.addEventListener("click", function () {
-        listFriends();
 
-        let friends = ['Rich', 'MoMo', 'Onyx', 'Maddy', 'Jovanna', 'Alex', 'Jarita', 'John', 'Jane', 'Miley'];
-
-        function listFriends() {
-            for (let i = 0; i < friends.length; i++) {
-
-                listName.innerHTML = friends[i];
-                listCount++
-                newLi.appendChild(listName);
-                document.body.appendChild(newLi);
-            }
+         for (let i = 0; i < friends.length; i++) {     
+            listName.innerHTML = friends[i];
+            listCount++
+            newLi.appendChild(listName);
+            document.body.appendChild(newLi);
         }
     });
-});
+ });
+
+
+
+
+
+            // const divFive = document.createElement("div");
+            // divFive.id = "div6";
+            // divFive.textContent = "Final Button";
+            // const finalBtn = document.createElement("button");
+            // finalBtn.id = "finalBtn";
+            // finalBtn.textContent = "Final Button";
+        
+            // const ul = document.createElement("ul");
+        
+            // finalBtn.appendChild(ul);
+            // divFive.appendChild(finalBtn);
+            // document.body.appendChild(divFive);
+        
+            // const friends = ['Rich', 'MoMo', 'Onyx', 'Maddy', 'Jovanna', 'Alex', 'Jarita', 'John', 'Jane', 'Miley']
+        
+        
+            // const finalBtn = document.getElementById("finalBtn");
+            // let counter = 0;
+        
+            // finalBtn.addEventListener("click", function () {
+            //     if (counter < 10) {
+            //         let friendName = friends[counter];
+            //         const li = document.createElement("li");
+            //         li.textContent = friendName;
+            //         ul.appendChild(li);
+            //     }
+            //     counter++;
+            // });
